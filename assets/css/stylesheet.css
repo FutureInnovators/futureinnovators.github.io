@@ -1,4 +1,5 @@
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -84,12 +85,21 @@ h5 {
   position: absolute;
   bottom: 16px;
   left: calc(50vw - 20px);
+  -webkit-animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
 }
 
 .partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   list-style: none;
   margin: 0 5vw 40px 5vw;
@@ -184,7 +194,7 @@ dt {
   font-size: 26px;
   color: #0071ed;
   font-weight: 400;
-  line-height: 2.0em;
+  line-height: 1.4em;
   margin-bottom: 20px;
 }
 
@@ -283,6 +293,9 @@ a {
     margin-left: 3vw;
   }
   .partners {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .pitch_info li {
@@ -313,5 +326,80 @@ a {
   dl {
     width: 94vw;
     margin-left: 3vw;
+  }
+  dt {
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10);
+    transform: translateY(-10);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10);
+    transform: translateY(-10);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-moz-keyframes bounce {
+  0% {
+    -moz-transform: translateY(0);
+  }
+  50% {
+    -moz-transform: translateY(-10px);
+  }
+  100% {
+    -moz-transform: translateY(0);
+  }
+  0% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -moz-transform: translateY(-10);
+    transform: translateY(-10);
+  }
+  100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
   }
 }
