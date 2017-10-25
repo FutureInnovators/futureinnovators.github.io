@@ -61,7 +61,7 @@ h5 {
 .splash {
   height: 100vh;
   width: 100vw;
-  background: url(../images/climate-kic-350836.jpg);
+  background: url(../images/CORP6484.JPG);
   background-size: cover;
   position: relative;
 }
@@ -110,7 +110,7 @@ h5 {
 }
 
 .partners li img {
-  width: 250px;
+  width: 150px;
   height: auto;
 }
 
@@ -142,7 +142,7 @@ h5 {
 .mid_photo_box {
   width: 100vw;
   height: 80vh;
-  background: url(../images/climate-kic-350836.jpg);
+  background: url(../images/CORP6593.JPG);
   background-size: cover;
 }
 
