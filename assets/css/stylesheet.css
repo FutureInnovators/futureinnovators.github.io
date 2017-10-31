@@ -49,7 +49,7 @@ h5 {
   text-align: center;
 }
 
-.button {
+.buttons {
   display: inline;
   font-weight: 300;
   font-size: 16px;
@@ -306,7 +306,7 @@ a {
     display: none;
   }
   .partners {
-    margin-left: calc(50vw - 125px);
+    margin-left: calc(50vw - 80px);
   }
   .pitch_info li {
     padding-top: 15vw;
@@ -380,6 +380,7 @@ a {
     transform: translateY(0);
   }
 }
+
 @-moz-keyframes bounce {
   0% {
     -moz-transform: translateY(0);
@@ -402,4 +403,39 @@ a {
     -moz-transform: translateY(0);
     transform: translateY(0);
   }
+}
+
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 16px 'museo-sans', Arial, sans-serif;
+  width: 100%;
+}
+
+.email {
+  border: 2px solid #0071ed;
+  height: 42px;
+  width: 250px;
+  border-radius: 5px;
+  font: 16px 'museo-sans', Arial, sans-serif;
+  display: inline;
+  padding-left: 1em;
+}
+
+.button {
+  background: #0071ed;
+  color: #ffffff;
+  height: 42px;
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+  border: none;
+  display: inline;
+  font: 16px 'museo-sans', Arial, sans-serif;
+}
+
+.form-container {
+  margin-top: 30px;
+  width: 338px;
+  margin-left: calc(50vw - 169px);
+  margin-bottom: 120px;
 }
