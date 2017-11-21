@@ -181,7 +181,7 @@ h5 {
 }
 
 dl {
-  text-align: center;
+  text-align: left;
   line-height: 1.7em;
   width: 50vw;
   margin-left: 25vw;
@@ -190,7 +190,7 @@ dl {
 }
 
 dt {
-  text-align: center;
+  text-align: left;
   font-size: 26px;
   color: #0071ed;
   font-weight: 400;
@@ -199,15 +199,14 @@ dt {
 }
 
 dd {
-  text-align: center;
+  text-align: left;
   margin-bottom: 84px;
 }
 
 .gear {
-  display: inline-block;
-  width: 40px;
+  display: none;
   height: auto;
-  margin-bottom: 30px;
+
 }
 
 .mail {
